@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Colaborador - Simple Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form action="#" method="post" id="collaborator-form">
+        <label for="full-name">Por favor, ingresa tu nombre completo: *</label>
+        <input type="text" id="full-name" name="full_name" required>
+        
+        <label for="id-number">Por favor, ingresa tu número de cédula o pasaporte: *</label>
+        <input type="text" id="id-number" name="id_number" pattern="\d{3}-\d{7}-\d{1}" title="Formato: xxx-xxxxxxx-x" required>
+        
+        <label for="gender">Por favor, selecciona el género con el que te identificas: *</label>
+        <select id="gender" name="gender" required>
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Hombre</option>
+            <option value="No binario">No binario</option>
+            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+            <option value="Otro">Otro</option>
+        </select>
+        
+        <label for="phone">Por favor, ingresa tu número de teléfono de contacto: *</label>
+        <input type="tel" id="phone" name="phone" pattern="829-322-5310" required>
+        
+        <label for="specialization">¿Cuál es tu área de especialización en la Producción Audiovisual?</label>
+        <select id="specialization" name="specialization">
+            <option value="Asistente de Dirección">Asistente de Dirección</option>
+            <option value="Colorista">Colorista</option>
+            <!--... Otras opciones de especialización ...-->
+            <option value="Diseñador de sonido">Diseñador de sonido</option>
+        </select>
+        
+        <label for="experience">Por favor, indica cuántos años de experiencia tienes en tu campo de trabajo *</label>
+        <input type="number" id="experience" name="experience" min="0" required>
+        
+        <label for="travel-availability">Disponibilidad para traslados y trabajos en ubicaciones específicas</label>
+        <select id="travel-availability" name="travel_availability">
+            <option value="Sí, estoy completamente dispuesto a viajar y trabajar en diferentes ubicaciones">Sí, estoy completamente dispuesto a viajar y trabajar en diferentes ubicaciones</option>
+            <!--... Otras opciones de disponibilidad ...-->
+        </select>
+
+        <label for="equipment-ownership">¿Propio o requeriría asignación de Simple Studio?</label>
+        <select id="equipment-ownership" name="equipment_ownership">
+            <option value="Dispongo de mi propio equipo profesional">Dispongo de mi propio equipo profesional</option>
+            <option value="Requeriría equipamiento proporcionado por Simple Studio">Requeriría equipamiento proporcionado por Simple Studio</option>
+        </select>
+        
+        <label for="equipment-detail">Por favor, detalle los equipamientos que tienes o utilizas regularmente.</label>
+        <textarea id="equipment-detail" name="equipment_detail" rows="4"></textarea>
+        
+        <label for="work-examples">Nos gustaría ver ejemplos de tu trabajo que sean relevantes para los servicios que podrías ofrecer a Simple Studio.</label>
+        <textarea id="work-examples" name="work_examples" rows="4"></textarea>
+        
+        <label for="professional-status">Nos gustaría conocer tu estado profesional actual y tu disponibilidad general para colaborar en proyectos.</label>
+        <textarea id="professional-status" name="professional_status" rows="4"></textarea>
+        
+        <label for="affiliation">¿Estás actualmente afiliado a una entidad o trabajas de forma independiente?</label>
+        <input type="text" id="affiliation" name="affiliation">
+        
+        <label for="languages">Por favor, selecciona todos los idiomas que hablas con fluidez:</label>
+        <select id="languages" name="languages" multiple>
+            <option value="Español">Español</option>
+            <option value="Ingles">Inglés</option>
+            <option value="Frances">Francés</option>
+            <!--... Otras opciones de idiomas ...-->
+        </select>
+        
+        <label for="price-range">¿En qué rango de precio te consideras para los servicios que ofreces?</label>
+        <select id="price-range" name="price_range">
+            <option value="Económico">Económico</option>
+            <option value="Moderado">Moderado</option>
+            <option value="Premium">Premium</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>
+
