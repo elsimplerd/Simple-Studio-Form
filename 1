@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para el Proceso de Incorporación de Proveedores Estratégicos, Simple Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form action="#" method="post" id="collaborator-form">
+        <label for="full-name">Por favor, ingrese su nombre completo:</label>
+      <input type="text" placeholder="Ej.: Jose Alfredo Perez" />
+
+       <!DOCTYPE html>
+<html>
+<head>
+  <title>Selector de Género</title>
+  <style>
+  </style>
+</head>
+<body>
+
+<label for="gender" style="margin-bottom: 20px;">Seleccione el género con el que se identifica:</label>
+  <select id="gender" name="gender" required aria-required="true" onchange="validateSelection()">
+    <option value="" disabled selected hidden>Seleccionar genero</option>
+    <option value="Hombre">Hombre</option>
+    <option value="Mujer">Mujer</option>
+    <option value="No binario">No binario</option>
+    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+    <option value="Otro">Otro</option>
+  </select>
+
+  <!-- Display feedback -->
+  <div id="feedback"></div>
+
+  <script>
+    // JavaScript function to validate and provide feedback
+    function validateSelection() {
+      var x = document.getElementById("gender").value;
+      var feedback = document.getElementById("feedback");
+
+      if (x === "Otro") {
+        feedback.innerHTML = "Has seleccionado 'Otro'. Por favor, específique en el siguiente campo el genero al cual se identifica:";
+
+        feedback.innerHTML += '<input type="text" id="otherGender" name="otherGender">';
+      } else {
+        feedback.innerHTML = "Has seleccionado: " + x;
+      }
+    }
+  </script>
+
+
+</style>
+
+<label for="email" style="margin-top: 10px;">Correo Electrónico </label>
+<input type="email" id="email" name="email" required placeholder="Ej. contacto@miempresa.com">
+
+
+        <label for="id-number">Número de cédula o pasaporte:</label>
+        <input type="text" id="id-number" name="id_number" pattern="\d{3}-\d{7}-\d{1}" title="Formato: xxx-xxxxxxx-x" required placeholder="ej.: XXX-XXXXXXX-X">
+
+
+      <label for="phone">Ingrese su numero de contacto:</label>
+<input type="tel" id="phone" name="phone" pattern="8293247698" required placeholder="Ejemplo: 8293247698">
+</select>
+
+<label for="location">Lugar de residencia: </label>
+<select id="location" name="location" required>
+    <option value="" disabled selected hidden>Seleccione</option>
+    <option value="Distrito Nacional">Distrito Nacional</option>
+    <option value="Santo Domingo Norte">Santo Domingo Norte</option>
+    <option value="Santo Domingo Oeste">Santo Domingo Oeste</option>
+    <option value="Santo Domingo Este">Santo Domingo Este</option>
+    <option value="Azua">Azua</option>
+    <option value="Baoruco">Baoruco</option>
+    <option value="Barahona">Barahona</option>
+    <option value="Dajabón">Dajabón</option>
+    <option value="Duarte">Duarte</option>
+    <option value="El Seibo">El Seibo</option>
+    <option value="Elias Piña">Elias Piña</option>
+    <option value="Espaillat">Espaillat</option>
+    <option value="Hato Mayor">Hato Mayor</option>
+    <option value="Hermanas Mirabal">Hermanas Mirabal</option>
+    <option value="Independencia">Independencia</option>
+    <option value="La Altagracia">La Altagracia</option>
+    <option value="La Romana">La Romana</option>
+    <option value="La Vega">La Vega</option>
+    <option value="Maria Trinidad Sánchez">Maria Trinidad Sánchez</option>
+    <option value="Monseñor Nouel">Monseñor Nouel</option>
+    <option value="Monte Cristi">Monte Cristi</option>
+    <option value="Monte Plata">Monte Plata</option>
+    <option value="Pedernales">Pedernales</option>
+    <option value="Peravia">Peravia</option>
+    <option value="Puerto Plata">Puerto Plata</option>
+    <option value="Salcedo">Salcedo</option>
+    <option value="Samaná">Samaná</option>
+    <option value="Sánchez Ramírez">Sánchez Ramírez</option>
+    <option value="San Cristóbal">San Cristóbal</option>
+    <option value="San José de Ocoa">San José de Ocoa</option>
+    <option value="San Juan">San Juan</option>
+    <option value="San Pedro de Macorís">San Pedro de Macorís</option>
+    <option value="Santiago">Santiago</option>
+    <option value="Santiago Rodríguez">Santiago Rodríguez</option>
+    <option value="Valverde">Valverde</option>
+</select>
+
+
+<label>¿Cuál es su área de especialización en la Producción Audiovisual?</label><br>
+<input type="checkbox" style="width: 10%;" id="Asistente de Dirección" name="specialization" value="Asistente de Dirección">
+<label for="Asistente de Dirección">Asistente de Dirección</label><br>
+<input type="checkbox" style="width: 10%;" id="Colorista" name="specialization" value="Colorista">
+<label for="Colorista">Colorista</label><br>
+<input type="checkbox" style="width: 10%;" id="Compositor musical" name="specialization" value="Compositor musical">
+<label for="Compositor musical">Compositor musical</label><br>
+<input type="checkbox" style="width: 10%;" id="Coordinador de producción" name="specialization" value="Coordinador de producción">
+<label for="Coordinador de producción">Coordinador de producción</label><br>
+<input type="checkbox" style="width: 10%;" id="Diseñador de sonido" name="specialization" value="Diseñador de sonido">
+<label for="Diseñador de sonido">Diseñador de sonido</label><br>
+<input type="checkbox" style="width: 10%;" id="Diseñador de vestuario" name="specialization" value="Diseñador de vestuario">
+<label for="Diseñador de vestuario">Diseñador de vestuario</label><br>
+<input type="checkbox" style="width: 10%;" id="Director de arte" name="specialization" value="Director de arte">
+<label for="Director de arte">Director de arte</label><br>
+<input type="checkbox" style="width: 10%;" id="Director de casting" name="specialization" value="Director de casting">
+<label for="Director de casting">Director de casting</label><br>
+<input type="checkbox" style="width: 10%;" id="Diseño de Producción" name="specialization" value="Diseño de Producción">
+<label for="Diseño de Producción">Diseño de Producción</label><br>
+<input type="checkbox" style="width: 10%;" id="Efectos Visuales (VFX)" name="specialization" value="Efectos Visuales (VFX)">
+<label for="Efectos Visuales (VFX)">Efectos Visuales (VFX)</label><br>
+<input type="checkbox" style="width: 10%;" id="Especialista en captura de movimiento" name="specialization" value="Especialista en captura de movimiento">
+<label for="Especialista en captura de movimiento">Especialista en captura de movimiento</label><br>
+<input type="checkbox" style="width: 10%;" id="Especialista en iluminación o Gaffer" name="specialization" value="Especialista en iluminación o Gaffer">
+<label for="Especialista en iluminación o Gaffer">Especialista en iluminación o Gaffer</label><br>
+<input type="checkbox" style="width: 10%;" id="Filmmaker" name="specialization" value="Filmmaker">
+<label for="Filmmaker">Filmmaker</label><br>
+<input type="checkbox" style="width: 10%;" id="Fotógrafo Profesional" name="specialization" value="Fotógrafo Profesional">
+<label for="Fotógrafo Profesional">Fotógrafo Profesional</label><br>
+<input type="checkbox" style="width: 10%;" id="Guión" name="specialization" value="Guión">
+<label for="Guión">Guión</label><br>
+<input type="checkbox" style="width: 10%;" id="Ingeniero de transmisión en vivo" name="specialization" value="Ingeniero de transmisión en vivo">
+<label for="Ingeniero de transmisión en vivo">Ingeniero de transmisión en vivo</label><br>
+<input type="checkbox" style="width: 10%;" id="Maquillador" name="specialization" value="Maquillador">
+<label for="Maquillador">Maquillador</label><br>
+<input type="checkbox" style="width: 10%;" id="Montaje/Edición en Vivo" name="specialization" value="Montaje/Edición en Vivo">
+<label for="Montaje/Edición en Vivo">Montaje/Edición en Vivo</label><br>
+<input type="checkbox" style="width: 10%;" id="Operador de Cámara" name="specialization" value="Operador de Cámara">
+<label for="Operador de Cámara">Operador de Cámara</label><br>
+<input type="checkbox" style="width: 10%;" id="Postproducción" name="specialization" value="Postproducción">
+<label for="Postproducción">Postproducción</label><br>
+<input type="checkbox" style="width: 10%;" id="Productor de campo" name="specialization" value="Productor de campo">
+<label for="Productor de campo">Productor de campo</label><br>
+<input type="checkbox" style="width: 10%;" id="Sonidista" name="specialization" value="Sonidista">
+<label for="Sonidista">Sonidista</label><br>
+<input type="checkbox" style="width: 10%;" id="Programador" name="specialization" value="Programador">
+<label for="Programador">Programador</label><br>
+<input type="checkbox" style="width: 10%;" id="Secretario/a" name="specialization" value="Secretario/a">
+<label for="Secretario/a">Secretario/a</label><br>
+<!-- HTML -->
+<input type="checkbox" style="width: 10%;" id="Otra" name="specialization" value="Otra" onclick="mostrarCampo()">
+<label for="Otra">Otra</label><br>
+<div id="campoOculto" style="display: none;">
+    <input type="text" id="otraEspecializacion" name="otraEspecializacion" placeholder="Especifique su área">
+</div>
+
+<!-- JavaScript -->
+<script>
+function mostrarCampo() {
+    var checkBox = document.getElementById("Otra");
+    var campoOculto = document.getElementById("campoOculto");
+    if (checkBox.checked == true){
+        campoOculto.style.display = "block";
+    } else {
+        campoOculto.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+</select>
+<label for="experience">Por favor, califique su nivel de experiencia en su campo de trabajo</label>
+<select id="experience" name="experience" required>
+    <option value="" disabled selected hidden>Seleccione su nivel de experiencia</option>
+    <option value="Principiante">Principiante</option>
+    <option value="Intermedio">Intermedio</option>
+    <option value="Avanzado">Avanzado</option>
+    <option value="Experto">Experto</option>
+</select>
+
+
+       <label for="travel-availability">Disponibilidad para traslados y trabajos en ubicaciones específicas</label>
+<select id="travel-availability" name="travel_availability" required>
+    <option value="" disabled selected hidden>Selecciona tu disponibilidad</option>
+    <option value="Sí, estoy completamente dispuesto a viajar y trabajar en diferentes ubicaciones por el tiempo necesario.">Sí, estoy completamente dispuesto a viajar y trabajar en diferentes ubicaciones por el tiempo necesario.</option>
+    <option value="Parcialmente, dependiendo de la ubicación y el tiempo del proyecto.">Parcialmente, dependiendo de la ubicación y el tiempo del proyecto.</option>
+    <option value="No, mi capacidad para desplazarme es un poco limitada.">No, mi capacidad para desplazarme es un poco limitada.</option>
+    <option value="Se puede discutir">Se puede discutir</option>
+    <option value="Otro:">Otro:</option>
+</select>
+
+
+
+        <label for="equipment-ownership">¿Propio o requeriría asignación de Simple Studio?</label>
+<select id="equipment-ownership" name="equipment_ownership">
+    <option value="" disabled selected hidden>Selecciona una opción</option>
+    <option value="Dispongo de mi propio equipo profesional">Dispongo de mi propio equipo profesional</option>
+    <option value="Requeriría equipamiento proporcionado por Simple Studio">Requeriría equipamiento proporcionado por Simple Studio</option>
+    <option value="Otro:">Otro:</option>
+</select>
+
+
+      <label for="equipment-detail">Por favor, detalle los equipamientos que tienes o utilizas regularmente.</label>
+<textarea id="equipment-detail" name="equipment_detail" rows="4" placeholder="Por ejemplo, cámaras, lentes, luces, etc."></textarea>
+
+
+<label for="work-examples">Nos gustaría ver ejemplos de tu trabajo que sean relevantes para los servicios que podrías ofrecer a Simple Studio. Por favor, incluye enlaces a páginas web, redes sociales o cualquier otra plataforma donde podamos ver tu portafolio.</label>
+<textarea id="work-examples" name="work_examples" rows="4" placeholder="Puedes proporcionar enlaces a tu portafolio en línea, redes sociales o descripciones de proyectos relevantes aquí."></textarea>
+
+
+      <label for="affiliation">¿Estás actualmente afiliado a una entidad o trabajas de forma independiente? *</label>
+<select id="affiliation" name="affiliation" required>
+    <option value="Totalmente afiliado a una o más entidades">Totalmente afiliado a una o más entidades</option>
+    <option value="Mayormente afiliado, pero con algo de trabajo independiente">Mayormente afiliado, pero con algo de trabajo independiente</option>
+    <option value="Equilibrado entre afiliación e independencia">Equilibrado entre afiliación e independencia</option>
+    <option value="Mayormente independiente, pero con alguna afiliación">Mayormente independiente, pero con alguna afiliación</option>
+    <option value="Totalmente independiente">Totalmente independiente</option>
+    <option value="Otra…">Otra…</option>
+</select>
+
+<label for="equipment-ownership">¿Qué tipo de equipamiento utilizas o necesitas para tu trabajo? *</label>
+<select id="equipment-ownership" name="equipment_ownership" required>
+    <option value="" disabled selected hidden>Selecciona una opción</option>
+    <option value="Dispongo de mi propio equipo profesional.">Dispongo de mi propio equipo profesional.</option>
+    <option value="Requeriría equipamiento proporcionado por Simple Studio.">Requeriría equipamiento proporcionado por Simple Studio.</option>
+    <option value="Utilizo una combinación de ambos, según las necesidades del proyecto.">Utilizo una combinación de ambos, según las necesidades del proyecto.</option>
+    <option value="Otra">Otra</option>
+</select>
+
+<!-- Campo de texto adicional para la opción "Otra" -->
+<textarea id="equipment-ownership-other" name="equipment_ownership_other" rows="4" placeholder="Especifica el tipo de equipamiento que utilizas o necesitas"></textarea>
+
+
+<label for="social-media">Nos encantaría conectarnos contigo más allá de este formulario. Si te sientes cómodo, por favor comparte los enlaces a tus redes sociales, ya sean personales o profesionales:</label>
+
+
+<!-- Campo para Instagram -->
+<label for="instagram">Instagram:</label>
+<input type="text" id="instagram" name="instagram" placeholder="Enlace a tu perfil de Instagram">
+
+<!-- Campo para Facebook -->
+<label for="facebook">Facebook:</label>
+<input type="text" id="facebook" name="facebook" placeholder="Enlace a tu perfil de Facebook">
+
+<!-- Campo para Twitter -->
+<label for="twitter">Twitter:</label>
+<input type="text" id="twitter" name="twitter" placeholder="Enlace a tu perfil de Twitter">
+
+<!-- Campo para X -->
+<label for="X">X:</label>
+<input type="text" id="X" name="X" placeholder="Enlace a tu perfil de X">
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Idiomas</title>
+    <style>
+        input[type="checkbox"] {
+            width: 10%;
+        }
+        legend {
+            margin-bottom: 20px; /* Agregar margen debajo del legend */
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>¿Qué idiomas hablas con fluidez?</legend>
+        <!-- Primeras 3 opciones de idiomas más comunes -->
+        <input type="checkbox" id="idioma1" name="idioma1" value="Español">
+        <label for="idioma1">Español</label><br>
+        <input type="checkbox" id="idioma2" name="idioma2" value="Inglés">
+        <label for="idioma2">Inglés</label><br>
+        <input type="checkbox" id="idioma3" name="idioma3" value="Francés">
+        <label for="idioma3">Francés</label><br>
+        <div id="masIdiomas" style="display:none;">
+            <!-- Aquí están los idiomas adicionales -->
+            <input type="checkbox" id="idioma4" name="idioma4" value="Alemán">
+            <label for="idioma4">Alemán</label><br>
+            <input type="checkbox" id="idioma5" name="idioma5" value="Árabe">
+            <label for="idioma5">Árabe</label><br>
+            <input type="checkbox" id="idioma6" name="idioma6" value="Chino">
+            <label for="idioma6">Chino</label><br>
+            <input type="checkbox" id="idioma6" name="idioma6" value="Japones">
+            <label for="idioma6">Chino</label><br>
+            <input type="checkbox" id="idioma8" name="idioma8" value="Italiano">
+            <label for="idioma8">Italiano</label><br>
+            <input type="checkbox" id="idioma9" name="idioma9" value="Portugués">
+            <label for="idioma9">Portugués</label><br>
+            <input type="checkbox" id="idioma10" name="idioma10" value="Ruso">
+            <label for="idioma10">Ruso</label><br>
+            <input type="checkbox" id="idioma11" name="idioma11" value="Holandés">
+            <label for="idioma11">Holandés</label><br>
+            <input type="checkbox" id="idioma12" name="idioma12" value="Sueco">
+            <label for="idioma12">Sueco</label><br>
+            <input type="checkbox" id="idioma13" name="idioma13" value="Griego">
+            <label for="idioma13">Griego</label><br>
+            <input type="checkbox" id="idioma14" name="idioma14" value="Noruego">
+            <label for="idioma14">Noruego</label><br>
+            <input type="checkbox" id="idioma15" name="idioma15" value="Danés">
+            <label for="idioma15">Danés</label><br>
+                        <input type="checkbox" id="idioma16" name="idioma16" value="Polaco">
+            <label for="idioma16">Polaco</label><br>
+            <input type="checkbox" id="idioma17" name="idioma17" value="Finlandés">
+            <label for="idioma17">Finlandés</label><br>
+            <input type="checkbox" id="idioma18" name="idioma18" value="Checo">
+            <label for="idioma18">Checo</label><br>
+            <input type="checkbox" id="idioma19" name="idioma19" value="Húngaro">
+            <label for="idioma19">Húngaro</label><br>
+            <input type="checkbox" id="idioma20" name="idioma20" value="Islandés">
+            <label for="idioma20">Islandés</label><br>
+            <input type="checkbox" id="idioma21" name="idioma21" value="Rumano">
+            <label for="idioma21">Rumano</label><br>
+            <input type="checkbox" id="idioma22" name="idioma22" value="Búlgaro">
+            <label for="idioma22">Búlgaro</label><br>
+            <input type="checkbox" id="idioma23" name="idioma23" value="Eslovaco">
+            <label for="idioma23">Eslovaco</label><br>
+            <input type="checkbox" id="idioma24" name="idioma24" value="Croata">
+            <label for="idioma24">Croata</label><br>
+            <input type="checkbox" id="idioma25" name="idioma25" value="Esloveno">
+            <label for="idioma25">Esloveno</label><br>
+            <input type="checkbox" id="idioma26" name="idioma26" value="Serbio">
+            <label for="idioma26">Serbio</label><br>
+            <input type="checkbox" id="idioma27" name="idioma27" value="Letón">
+            <label for="idioma27">Letón</label><br>
+            <input type="checkbox" id="idioma28" name="idioma28" value="Lituano">
+            <label for="idioma28">Lituano</label><br>
+            <input type="checkbox" id="idioma29" name="idioma29" value="Estonio">
+            <label for="idioma29">Estonio</label><br>
+            <input type="checkbox" id="idioma30" name="idioma30" value="Maltés">
+            <label for="idioma30">Maltés</label><br>
+            <input type="checkbox" id="idioma31" name="idioma31" value="Albanés">
+            <label for="idioma31">Albanés</label><br>
+            <input type="checkbox" id="idioma32" name="idioma32" value="Ucraniano">
+            <label for="idioma32">Ucraniano</label><br>
+            <input type="checkbox" id="idioma33" name="idioma33" value="Bielorruso">
+            <label for="idioma33">Bielorruso</label><br>
+            <input type="checkbox" id="idioma34" name="idioma34" value="Macedonio">
+            <label for="idioma34">Macedonio</label><br>
+            <input type="checkbox" id="idioma35" name="idioma35" value="Noruego">
+            <label for="idioma35">Noruego</label><br>
+            <input type="checkbox" id="idioma36" name="idioma36" value="Georgiano">
+            <label for="idioma36">Georgiano</label><br>
+            <input type="checkbox" id="idioma37" name="idioma37" value="Armenio">
+            <label for="idioma37">Armenio</label><br>
+            <input type="checkbox" id="idioma38" name="idioma38" value="Hebreo">
+            <label for="idioma38">Hebreo</label><br>
+            <input type="checkbox" id="idioma39" name="idioma39" value="Árabe">
+            <label for="idioma39">Árabe</label><br>
+            <input type="checkbox" id="idioma40" name="idioma40" value="Persa">
+            <label for="idioma40">Persa</label><br>
+            <input type="checkbox" id="idioma41" name="idioma41" value="Hindi">
+            <label for="idioma41">Hindi</label><br>
+            <input type="checkbox" id="idioma42" name="idioma42" value="Quechua">
+            <label for="idioma42">Quechua</label><br>
+            <input type="checkbox" id="idioma43" name="idioma43" value="Guaraní">
+            <label for="idioma43">Guaraní</label><br>
+            <input type="checkbox" id="idioma44" name="idioma44" value="Aimara">
+            <label for="idioma44">Aimara</label><br>
+            <input type="checkbox" id="idioma45" name="idioma45" value="Náhuatl">
+            <label for="idioma45">Náhuatl</label><br>
+            <input type="checkbox" id="idioma46" name="idioma46" value="Maya">
+            <label for="idioma46">Maya</label><br>
+            <input type="checkbox" id="idioma47" name="idioma47" value="Mapudungun">
+            <label for="idioma47">Mapudungun</label><br>
+            <input type="checkbox" id="idioma48" name="idioma48" value="Tupi">
+            <label for="idioma48">Tupi</label><br>
+            <input type="checkbox" id="idioma49" name="idioma49" value="Wayuu">
+            <label for="idioma49">Wayuu</label><br>
+            <input type="checkbox" id="idioma50" name="idioma50" value="Yoruba">
+            <label for="idioma50">Yoruba</label><br>
+            <input type="checkbox" id="idioma51" name="idioma51" value="Zulu">
+            <label for="idioma51">Zulu</label><br>
+            <input type="checkbox" id="idioma52" name="idioma52" value="Swahili">
+            <label for="idioma52">Swahili</label><br>
+            <input type="checkbox" id="idioma53" name="idioma53" value="Maorí">
+            <label for="idioma53">Maorí</label><br>
+            <input type="checkbox" id="idioma54" name="idioma54" value="Sánscrito">
+            <label for="idioma54">Sánscrito</label><br>
+            <input type="checkbox" id="idioma55" name="idioma55" value="Urdu">
+            <label for="idioma55">Urdu</label><br>
+            <input type="checkbox" id="idioma56" name="idioma56" value="Punjabi">
+            <label for="idioma56">Punjabi</label><br>
+            <input type="checkbox" id="idioma57" name="idioma57" value="Pashto">
+            <label for="idioma57">Pashto</label><br>
+            <input type="checkbox" id="idioma58" name="idioma58" value="Sindhi">
+            <label for="idioma58">Sindhi</label><br>
+            <input type="checkbox" id="idioma59" name="idioma59" value="Somalí">
+            <label for="idioma59">Somalí</label><br>
+            <input type="checkbox" id="idioma60" name="idioma60" value="Hausa">
+            <label for="idioma60">Hausa</label><br>
+
+
+            <!-- Añade más idiomas aquí -->
+        </div>
+        <button type="button" id="btnVerMas">Ver más...</button>
+        <button type="button" id="btnVerMenos" style="display:none;">Ver menos...</button>
+    </fieldset>
+</form>
+
+<script>
+    const btnVerMas = document.getElementById("btnVerMas");
+    const btnVerMenos = document.getElementById("btnVerMenos");
+    const masIdiomas = document.getElementById("masIdiomas");
+
+    btnVerMas.addEventListener("click", () => {
+        masIdiomas.style.display = "block";
+        btnVerMas.style.display = "none";
+        btnVerMenos.style.display = "block";
+    });
+
+    btnVerMenos.addEventListener("click", () => {
+        masIdiomas.style.display = "none";
+        btnVerMas.style.display = "block";
+        btnVerMenos.style.display = "none";
+    });
+</script>
+
+</body>
+</html>
+
+
+
+        <label for="price-range">¿En qué rango de precio se considera para los servicios que ofrece?</label>
+        <select id="price-range" name="price_range">
+            <option value="Económico">Económico</option>
+            <option value="Moderado">Moderado</option>
+            <option value="Premium">Premium</option>
+        </select>
+
+<label for="referral">¿Cómo te enteraste de Simple Studio? (Opcional)</label>
+<textarea id="referral" name="referral" rows="2" placeholder="Nos interesa saber cómo te enteraste de nosotros"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>
